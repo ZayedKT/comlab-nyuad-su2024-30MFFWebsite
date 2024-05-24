@@ -4,6 +4,7 @@
     <title>Heading To Class</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -26,7 +27,7 @@
       </a>
       <a href="#home" class="w3-bar-item w3-button">HOME</a>
       <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> VIDEO</a>
-      <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PHOTO GALLERY</a>
+      <a href="#carousel" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PHOTO GALLERY</a>
       <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACTS</a>
       </a>
     </div>
@@ -34,7 +35,7 @@
     <!-- Navbar on small screens -->
     <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
       <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">VIDEO</a>
-      <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PHOTO GALLERY</a>
+      <a href="#carousel" class="w3-bar-item w3-button" onclick="toggleFunction()">PHOTO GALLERY</a>
       <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACTS</a>
       <!--<a href="#" class="w3-bar-item w3-button">SEARCH</a> -->
     </div>
@@ -53,20 +54,41 @@
 
     <!-- The Title of The Video -->
     <div class="w3-content w3-container w3-padding-64" id="about">
-        <h3 class="w3-center">Heading To My First Class at The Arts Center</h3>
+        <h3 class="w3-center">About the Video</h3>
   
     <!-- About the Video -->
-    <p class="w3-center"><em>About The Video</em></p>
-    <p>The Video Aims to Showcase the Life of a Student at NYUAD heading to class. It captures arts within the Arts Center from the perspective of a student heading to class.</p>
+    <p>The Video 'Heading To My First Class at The Arts Cente', aims to Showcase the visual Point Of View of a student at NYUAD heading to class. It captures elements of art within the Arts Center that range from the drawing and handicrafts to interior design and architecture.</p>
     </div>
     <!-- Playing the Video -->
     <div class="iframe" style="margin-top: -40px;">
-        <iframe src="https://drive.google.com/file/d/1GMHClw63PIEE0cIYu_aTNN_rys0VW2P7/preview" width="640" height="480" allow="autoplay"></iframe>
+        <iframe src="https://drive.google.com/file/d/1crkOW6NeGEyWO6Yc11AP8J6iuSrkt3Uf/preview" allow="autoplay"></iframe>
     </div>
   
 
-<!-- Image Carousel -->
-    <main class="carousel-container">
+
+
+<!-- Is a thin Grey Line Seperating Different Sections -->
+<div style="margin-top: 50px; margin-bottom: -35px;">
+  <svg width=100% height="5" xmlns="http://www.w3.org/2000/svg">
+    <rect width=100% height="5" x="0" y="0" rx="20" ry="20" fill="grey" />
+  </svg>
+</div>
+
+
+
+
+<!-- Image Carousel Section -->
+
+    <!-- The Title of the Image Carousel -->
+    <div class="w3-content w3-container w3-padding-64" id="carousel" style="margin-top: 20px;"> <!-- The Margin Top Adds white space between the video and the Image Gallery-->
+      <h3 class="w3-center">The Image Gallery</h3>
+
+    <!-- About the Image Carousel -->
+    <p>The Image Gallery Showcases other Art Elements and areas in the Arts Center that were not featured in the Film. In other words, 'The Behind The Scenes' of the Film.</p>
+    </div>
+  
+    <!-- The Image Carousel -->
+    <main class="carousel-container" style="margin-top: -40px;"> <!-- Margine-top = -40pixels removes the white space between the titles and the Image Gallery/Carousel-->
       <div class="carousel">
         <div class="item active">
           <img src="Media/Image1.jpg" alt="Image 1" />
@@ -97,7 +119,43 @@
 
 
 
+<!-- Is a thin Grey Line Seperating Different Sections -->
+<div style="margin-top: 50px; margin-bottom: -35px;">
+  <svg width=100% height="5" xmlns="http://www.w3.org/2000/svg">
+    <rect width=100% height="5" x="0" y="0" rx="20" ry="20" fill="grey" />
+  </svg>
+</div>
 
-    
+
+
+
+<!-- Contacts Section -->
+
+    <!-- The Title of the Contacts -->
+    <div class="w3-content w3-container w3-padding-64" id="contact" style="margin-top: -30px;"> <!-- The Margin Top Adds white space between the Image Gallery and the Contacts Section-->
+      <h3 class="w3-center">Contacts</h3>
+      
+    <!-- The Contacts-->
+    <div class="w3-content w3-container w3-padding-64" style="margin-top: -80px;">
+      <h5 class="w3-center">We are in AbuDhabi, UAE</h5>
+      <h5 class="w3-center">Email Us at 30MFF@nyu.edu</h5>
+
+    <!-- About the Contacts -->
+    <p class="w3-center"><em>Feel Free to Reach Out to Us With Any Questions, Feedback, or Inquiries!</em></p>
+      </div>
+    </div>
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off" style="margin-top: -100px;">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To The Top</a>
+  <div class="w3-xlarge w3-section">
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+
+
 </body>
 </html>

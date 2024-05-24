@@ -1,4 +1,4 @@
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto";}
 body, html {
   height: 100%;
   color: #777;
@@ -57,12 +57,12 @@ iframe {
 body {
   min-height: 100dvh;
   /*display: flex;
-  align-items: center; Editted*/ 
-  font-family: "Roboto";
+  align-items: center;
+  font-family: "Roboto"; Editted Myself to remove repeated task as first line*/
   font-size: var(--lx-text-01);
   font-weight: 500;
-  color: #ffffe6;
-  background-color: #10100e;
+  /*color: #ffffe6;
+  background-color: #10100e; Editted Myself to remove BG and text color issues*/
   margin: 0; /*Editted*/
   padding: 0; /*Editted*/
 }
@@ -118,7 +118,7 @@ body {
         text-transform: uppercase;
         text-align: center;
         font-size: 12px;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(255, 255, 255, 0.813); /*Changed to white, to have a similar color to the theme/background, #ffffff*/
       }
 
       /*The Object/Block that contains the overall Image Carousel. It includes the image and the text describing each image.*/
@@ -141,8 +141,8 @@ body {
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 900;
-    color: #10100e;
-    background-color: #ffffe6;
+    color: #ffffff; /*Changed to white, to have a similar color to the theme/background, #ffffff*/
+    background-color: #777; /*Changed to have a similar color to the theme/text, #777*/
     transition: transform 0.2s ease-in-out;
 
     /*Animation of the Buttons once the Cursor is placed on them*/
@@ -176,12 +176,12 @@ body {
       cursor: pointer;
       height: 10px;
       width: 10px;
-      background-color: #242421;
+      background-color: #777; /*Changed to have a similar color to the theme/text, #777*/
       transition: background-color 0.2s ease;
 
       &.active,
       &:hover {
-        background-color: #ffffe6;
+        background-color: #ffffff; /*Changed to white, to have a similar color to the theme/background, #ffffff*/
       }
     }
   }
