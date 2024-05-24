@@ -227,4 +227,19 @@ body {
   .carousel .item img {
     max-width: 100%; /* Ensure image doesn't exceed viewport width */
   }
+
+  
+  /* Smaller Buttons for phones */
+  .btn {
+    padding: 0.5em 1em; /* Reduce padding for smaller buttons */
+    font-size: 10px; /* Adjust font size for smaller buttons */
+  }
+
+  .prev {
+    left: -2%; /* Adjust position if necessary */
+  }
+
+  .next {
+    right: -2%; /* Adjust position if necessary */
+  }
 }
