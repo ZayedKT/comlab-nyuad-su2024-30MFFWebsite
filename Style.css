@@ -67,6 +67,7 @@ iframe {
     max-width: 100%; /* Ensure it doesn't exceed the viewport width */
     aspect-ratio: 16/9;
   }
+
 }
 
 /* Image Carousel */
@@ -94,11 +95,15 @@ body {
 
 .carousel-container {
   /*width: 80%; Editted*/
-  max-width: 100%; /*Editted 2*/
+  max-width: 640px; /*Editted 2, By Me*/
+  max-height: 360px;
+  Width: 80%;
+  height: auto;
   aspect-ratio: 16/9; /*Editted 2, By me*/
-  width: 640px; /*Editted*/ /*Image Carousel's Width*/
+  /*width: 640px;*/ /*Editted*/ /*Image Carousel's Width, removed by me*/
   margin: auto;
   position: relative;
+  align-items: center;
   display: flex;
   flex-direction: column;
   gap: var(--lx-gap);
@@ -210,8 +215,8 @@ body {
 
 
 
-/* Ensure carousel responsiveness for smaller screens */ /*Editted 2*/
-@media only screen and (max-width: 640px) {
+/*Editted 2 Ensure carousel responsiveness for smaller screens */
+@media only screen and (max-device-width: 1250px) {
   .carousel-container {
     width: 90%; /* Adjust width for smaller screens */
     max-width: 100%; /* Ensure it doesn't exceed the viewport width */
