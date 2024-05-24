@@ -94,6 +94,8 @@ body {
 
 .carousel-container {
   /*width: 80%; Editted*/
+  max-width: 100%; /*Editted 2*/
+  aspect-ratio: 16/9; /*Editted 2, By me*/
   width: 640px; /*Editted*/ /*Image Carousel's Width*/
   margin: auto;
   position: relative;
@@ -111,14 +113,17 @@ body {
       opacity: 0;
       width: 100%;
       /*height: 100%; Editted*/
-      height: 360px; /*Image Carousel's Height*/
+      height: auto; /*Editted 2*/
+      max-height: 360px; /*Editted 2*/
+      /*height: 360px; *//*Image Carousel's Height*/ /*Editted 2*/
       display: none;
       transition: opacity 0.5s ease-in-out;
 
       /*The area used to display the alternating images of the Image Carousel*/
       img {
         width: 100%;
-        height: 100%;
+        height: auto; /*Editted 2*/
+        /*height: 100%;*/ /*Editted 2*/
         /*width: 480px; /*Editted to Resize Image Sizes*/
         /*height: 270px; /*Editted to Resize Image Sizes*/
         object-fit: cover;
@@ -200,5 +205,21 @@ body {
         background-color: #ffffff; /*Changed to white, to have a similar color to the theme/background, #ffffff*/
       }
     }
+  }
+}
+
+
+
+/* Ensure carousel responsiveness for smaller screens */ /*Editted 2*/
+@media only screen and (max-width: 640px) {
+  .carousel-container {
+    width: 90%; /* Adjust width for smaller screens */
+    max-width: 100%; /* Ensure it doesn't exceed the viewport width */
+  }
+  .carousel .item {
+    max-height: none; /* Remove max height constraint */
+  }
+  .carousel .item img {
+    max-width: 100%; /* Ensure image doesn't exceed viewport width */
   }
 }
