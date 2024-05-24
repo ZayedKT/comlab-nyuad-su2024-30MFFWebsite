@@ -59,16 +59,6 @@ iframe {
   }
 }
 
-
-/* Ensure iframe responsiveness for smaller screens Editted 2*/
-@media only screen and (max-device-width: 1250px) {
-  iframe {
-    width: 90%; /* Adjust width for smaller screens */
-    max-width: 100%; /* Ensure it doesn't exceed the viewport width */
-    aspect-ratio: 16/9;
-  }
-}
-
 /* Image Carousel */
 body {
   min-height: 100dvh;
