@@ -12,8 +12,14 @@ iframe {
   left: 50%;
   align-items: center;
   /*width: 57%;*/
+  max-width: 960px;
+  max-height: 540px;
+  width: 80%;
+  height: auto;
+  aspect-ratio: 16/9;
+  /*
   width: 960px;
-  height: 540px;
+  height: 540px;*/
 }
 
 /* Create a Parallax Effect */
