@@ -228,7 +228,7 @@ body {
     max-width: 100%; /* Ensure image doesn't exceed viewport width */
   }
 
-  
+
   /* Smaller Buttons for phones */
   .btn {
     padding: 0.5em 1em; /* Reduce padding for smaller buttons */
@@ -243,3 +243,7 @@ body {
     right: -2%; /* Adjust position if necessary */
   }
 }
+
+
+
+
