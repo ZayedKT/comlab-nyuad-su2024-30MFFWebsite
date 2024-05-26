@@ -30,13 +30,12 @@ function toggleFunction() {
 
 
 //Image Carousel
-
 document.addEventListener("DOMContentLoaded", function () {
   let carousel = document.querySelector(".carousel");
   let items = carousel.querySelectorAll(".item");
   let dotsContainer = document.querySelector(".dots");
 
-  // Insert dots into the DOM
+  // Insert dots (or selection bar) into the DOM (DOM allows the javascript to access and edit some elements in the HTML file)
   items.forEach((_, index) => {
     let dot = document.createElement("span");
     dot.classList.add("dot");

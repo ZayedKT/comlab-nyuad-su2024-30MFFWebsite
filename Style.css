@@ -1,25 +1,33 @@
-body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto";}
+/*Setting the Default Font, size, Colors and Line Spacing*/
+body,h1,h2,h3,h4,h5,h6 {font-family: 'Roboto', sans-serif;}
 body, html {
   height: 100%;
   color: #777;
   line-height: 1.8;
 }
 
+/*Settings for the Video Dimensions and Position*/
 iframe {
   transform: translate(-50%, 0%);
   position: relative;
   top: 50%;
   left: 50%;
   align-items: center;
-  /*width: 57%;*/
   max-width: 960px;
   max-height: 540px;
   width: 80%;
   height: auto;
   aspect-ratio: 16/9;
-  /*
-  width: 960px;
-  height: 540px;*/
+}
+
+/* Ensure iframe responsiveness for smaller screens*/
+@media only screen and (max-device-width: 1250px) {
+  iframe {
+    width: 90%; /* Adjust width for smaller screens */
+    max-width: 100%; /* Ensure it doesn't exceed the viewport width */
+    aspect-ratio: 16/9;
+  }
+
 }
 
 /* Create a Parallax Effect */
@@ -30,7 +38,7 @@ iframe {
   background-size: cover;
 }
 
-/* First image (Logo. Full height) */
+/* Image Behind the Header 'Heading To Class' */
 .bgimg-1 {
   background-image: url('Media/bgimage2.jpg');
   min-height: 100%;
@@ -49,47 +57,32 @@ iframe {
 }
 
 
-/* Ensure iframe responsiveness for smaller screens Editted 2*/
-@media only screen and (max-device-width: 1250px) {
-  iframe {
-    width: 90%; /* Adjust width for smaller screens */
-    max-width: 100%; /* Ensure it doesn't exceed the viewport width */
-    aspect-ratio: 16/9;
-  }
 
-}
 
 /* Image Carousel */
 body {
   min-height: 100dvh;
-  /*display: flex;
-  align-items: center;
-  font-family: "Roboto"; Editted Myself to remove repeated task as first line*/
   font-size: var(--lx-text-01);
   font-weight: 500;
-  /*color: #ffffe6;
-  background-color: #10100e; Editted Myself to remove BG and text color issues*/
-  margin: 0; /*Editted*/
-  padding: 0; /*Editted*/
+  margin: 0;
+  padding: 0;
 }
 
-/* New main-content class to wrap main content Editted*/
+/* main-content class to wrap main content*/
 .main-content {
-  display: flex; /* Moved flex properties here */
+  display: flex;
   flex-direction: column;
   align-items: center;
   gap: var(--lx-gap);
-  padding: var(--lx-space-01); /* Added padding */
+  padding: var(--lx-space-01);
 }
 
 .carousel-container {
-  /*width: 80%; Editted*/
-  max-width: 640px; /*Editted 2, By Me*/
+  max-width: 640px;
   max-height: 360px;
   Width: 80%;
   height: auto;
-  aspect-ratio: 16/9; /*Editted 2, By me*/
-  /*width: 640px;*/ /*Editted*/ /*Image Carousel's Width, removed by me*/
+  aspect-ratio: 16/9;
   margin: auto;
   position: relative;
   align-items: center;
@@ -106,20 +99,15 @@ body {
     .item {
       opacity: 0;
       width: 100%;
-      /*height: 100%; Editted*/
-      height: auto; /*Editted 2*/
-      max-height: 360px; /*Editted 2*/
-      /*height: 360px; *//*Image Carousel's Height*/ /*Editted 2*/
+      height: auto;
+      max-height: 360px;
       display: none;
       transition: opacity 0.5s ease-in-out;
 
       /*The area used to display the alternating images of the Image Carousel*/
       img {
         width: 100%;
-        height: auto; /*Editted 2*/
-        /*height: 100%;*/ /*Editted 2*/
-        /*width: 480px; /*Editted to Resize Image Sizes*/
-        /*height: 270px; /*Editted to Resize Image Sizes*/
+        height: auto;
         object-fit: cover;
         object-position: center;
       }
@@ -133,7 +121,9 @@ body {
         text-transform: uppercase;
         text-align: center;
         font-size: 12px;
-        background-color: rgba(255, 255, 255, 0.813); /*Changed to white, to have a similar color to the theme/background, #ffffff*/
+        background-color: rgba(255, 255, 255, 0.813); /*Changed to white, to match the theme/design*/
+        font-family: 'Roboto', sans-serif; 
+        
       }
 
       /*The Object/Block that contains the overall Image Carousel. It includes the image and the text describing each image.*/
@@ -144,7 +134,7 @@ body {
     }
   }
 
-  /*Creating the object/shape that represent both the next and previous buttons. The font type and color of the text are specified*/
+  /*Creating the object/shape that represent both the next and previous buttons. The font type and color of the text are based on the theme/design*/
   .btn {
     padding: 1em 2em;
     position: absolute;
@@ -156,9 +146,10 @@ body {
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 900;
-    color: #ffffff; /*Changed to white, to have a similar color to the theme/background, #ffffff*/
-    background-color: #777; /*Changed to have a similar color to the theme/text, #777*/
+    color: #ffffff; /*Changed to white, to have a similar color to the theme/design, #ffffff*/
+    background-color: #777; /*Changed to grey, to have a similar color to the theme/design, #777*/
     transition: transform 0.2s ease-in-out;
+    font-family: 'Roboto', sans-serif; 
 
     /*Animation of the Buttons once the Cursor is placed on them*/
     &:active,
@@ -191,12 +182,12 @@ body {
       cursor: pointer;
       height: 10px;
       width: 10px;
-      background-color: #777; /*Changed to have a similar color to the theme/text, #777*/
+      background-color: #777; /*Changed to grey, to have a similar color to the theme/design, #777*/
       transition: background-color 0.2s ease;
 
       &.active,
       &:hover {
-        background-color: #ffffff; /*Changed to white, to have a similar color to the theme/background, #ffffff*/
+        background-color: #ffffff; /*Changed to white, to have a similar color to the theme/design, #ffffff*/
       }
     }
   }
@@ -204,32 +195,32 @@ body {
 
 
 
-/*Editted 2 Ensure carousel responsiveness for smaller screens */
+/*Ensure carousel responsiveness for smaller screens */
 @media only screen and (max-device-width: 1250px) {
   .carousel-container {
-    width: 90%; /* Adjust width for smaller screens */
-    max-width: 100%; /* Ensure it doesn't exceed the viewport width */
+    width: 90%;
+    max-width: 100%;
   }
   .carousel .item {
-    max-height: none; /* Remove max height constraint */
+    max-height: none;
   }
   .carousel .item img {
-    max-width: 100%; /* Ensure image doesn't exceed viewport width */
+    max-width: 100%;
   }
 
 
   /* Smaller Buttons for phones */
   .btn {
-    padding: 0.5em 1em; /* Reduce padding for smaller buttons */
-    font-size: 10px; /* Adjust font size for smaller buttons */
+    padding: 0.5em 1em;
+    font-size: 10px;
   }
 
   .prev {
-    left: -2%; /* Adjust position if necessary */
+    left: -2%;
   }
 
   .next {
-    right: -2%; /* Adjust position if necessary */
+    right: -2%;
   }
 }
 
